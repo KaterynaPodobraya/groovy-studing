@@ -14,7 +14,7 @@ class SpreadOperator{
         println s1 + " " + s2 + " " +s3
     }
 
-   public static void main(String[] args) {
+    static void main(String[] args) {
        def toSpread = [99, 100, 500]
        println (spreadList(toSpread))
        def mapToSpread = ["test1":"test val1"]

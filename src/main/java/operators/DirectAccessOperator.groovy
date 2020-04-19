@@ -2,7 +2,7 @@ package operators
 
 class DirectAccessOperator {
 
-   public static void main(String[] args) {
+   static void main(String[] args) {
        DirectAccessOperator.Person person = new Person()
        person.name = "Name"
 
