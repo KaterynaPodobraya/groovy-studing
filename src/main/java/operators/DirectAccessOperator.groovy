@@ -8,6 +8,8 @@ class DirectAccessOperator {
 
        //use of .@ forces usage of the field instead of the getter
        println person.@name
+       // getter is used
+       println person.name
    }
 
     static class Person{
