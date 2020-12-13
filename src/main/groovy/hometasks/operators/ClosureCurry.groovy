@@ -1,4 +1,4 @@
-package operators
+package hometasks.operators
 
 class ClosureCurry {
     public static void main(String[] args) {
