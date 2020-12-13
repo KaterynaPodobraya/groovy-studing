@@ -1,4 +1,4 @@
-package javacomparing
+package hometasks.javacomparing
 
 class Person {
 
