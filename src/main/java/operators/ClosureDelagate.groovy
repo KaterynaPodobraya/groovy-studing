@@ -36,8 +36,8 @@ def appender= {
     }
 
 def sb = new StringBuffer()
-appender.resolveStrategy = Closure.DELEGATE_FIRST
+//appender.resolveStrategy = Closure.DELEGATE_FIRST
 //appender.resolveStrategy = Closure.OWNER_ONLY
 appender.delegate = sb
-println appender()
+appender()
 

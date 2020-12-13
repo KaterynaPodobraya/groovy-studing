@@ -9,12 +9,13 @@ class ClosureCurry {
         baseClosure("ice cream", 1, 2.00)
 
         def curryClosure = baseClosure.curry("honey", 5)
-
         curryClosure(100.99)
 
         //rcurry
-
+        def rcurry = baseClosure.rcurry(3.99)
+        rcurry("coffee", 10)
         //ncurry
+        def ncurry = baseClosure.ncurry(0, "tea")
+        ncurry(5, 5.55)
     }
-
 }
