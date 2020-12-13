@@ -1,4 +1,4 @@
-package operators
+package hometasks.operators
 
 class CollectionList {
 //http://docs.groovy-lang.org/latest/html/groovy-jdk/java/util/List.html
@@ -10,7 +10,7 @@ class CollectionList {
         //immutableNames.add("Ben")
 
     //intersect
-    Set<String> names2 = ["Mark", "Adam"]
+    Set<String> names2 = ["Mark", "Adam", "Mary"]
     println(names.intersect(names2))
     println(names.toSpreadMap())
     println(names.toSorted())

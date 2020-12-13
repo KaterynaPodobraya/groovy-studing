@@ -1,7 +1,6 @@
-package operators
+package hometasks.operators
 
 class CollectionMap {
-//http://docs.groovy-lang.org/latest/html/groovy-jdk/java/util/List.html
 
     public static void main(String[] args) {
         String city = "testCity"
@@ -17,8 +16,6 @@ class CollectionMap {
             println(key)
         }
 
-        //each and eachWithIndex
-
-
+        test.each { println "This a key ${it.getKey()} and this is a value ${it.getValue()}"}
     }
 }
