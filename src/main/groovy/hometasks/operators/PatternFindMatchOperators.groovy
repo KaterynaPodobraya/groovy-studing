@@ -1,4 +1,4 @@
-package operators
+package hometasks.operators
 
 import java.util.regex.Pattern
 
@@ -7,11 +7,13 @@ class PatternFindMatchOperators {
     static void main(String[] args) {
 
         def text = "Test string for testing"
-        def strictText = "test"
+        def strictText = "test string"
         // The pattern operator (~) provides a simple way to create a java.util.regex.Pattern instance
         // Pattern operator
         def patternA = ~/test/
+        println((~/test/).getClass())
         def patternB = ~"test"
+        println (~"test").getClass()
         def patternC = ~'test'
         def patternD = ~"${patternC}"
         def patternE = ~"Not exists"
@@ -22,14 +24,23 @@ class PatternFindMatchOperators {
         findByPattern(patternC, text)
         findByPattern(patternD, text)
         findByPattern(patternE, text)
+        println("End Find operator !!!")
+
         println("Find operator !!!")
+        findByPattern(patternA, strictText)
+        findByPattern(patternB, strictText)
+        findByPattern(patternC, strictText)
+        findByPattern(patternD, strictText)
+        findByPattern(patternE, strictText)
+        println("End Find operator !!!")
+
         println("Match operator !!!")
         strictMatchByPattern(patternA, strictText)
         strictMatchByPattern(patternB, strictText)
         strictMatchByPattern(patternC, strictText)
         strictMatchByPattern(patternD, strictText)
         strictMatchByPattern(patternE, strictText)
-        println("Match operator !!!")
+        println("End Match operator !!!")
     }
 
     static def findByPattern(Pattern pattern, String testString){
