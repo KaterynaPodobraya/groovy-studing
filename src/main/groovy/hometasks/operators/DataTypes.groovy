@@ -1,4 +1,4 @@
-package operators
+package hometasks.operators
 
 class DataTypes {
     public static void main(String[] args) {
@@ -22,8 +22,8 @@ class DataTypes {
 
         def x = 10
         10.times {println x+=10}
-       // 10.upto{}
-       // 10.downto({})
+        10.upto ( 15, {println it})
+        10.downto(4, {println it})
 
         10.step(20, 0.5, {y -> println y})
 
