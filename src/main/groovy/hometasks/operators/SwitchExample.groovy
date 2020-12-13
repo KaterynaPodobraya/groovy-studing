@@ -1,4 +1,4 @@
-package operators
+package hometasks.operators
 
 class SwitchExample {
 
